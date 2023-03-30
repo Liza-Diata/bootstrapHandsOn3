@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary bg-dark">
+      <div class="container-fluid bg-dark">
+        <div class="Title ms-5 text-light "><h4>Resturant Demo</h4></div>
+        <div class="buttons"> 
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#sign-upModal">
+            Sign-up</button>
+                      <!-- Modal -->
+          <div class="modal fade" id="sign-upModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5">Sign-up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>Application User</p>
+                  <p>Email:</p>
+                  <input type="email" class="form-control">
+                  <p>FullName :</p>
+                  <input type="text" class="form-control">
+                  <p>Password:</p>
+                  <input type="password" class="form-control"><br>
+                  <button type="submit" class="btn btn-primary">Sign-up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-primary" href="Login.html" role="button">Login</a>
+          <a class="btn btn-primary" href="Create.html" role="button">Create</a>
+          <a class="btn btn-primary" href="update.html" role="button">Edit</a>
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Inventory</button>
+    </nav>
+            <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Resto Demo Records</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>List of Available Items </p>
+              <table class="table table-striped table-hover">
+                <thead class="head fw-bold border-bottom border-dark">
+                  <tr>
+                    <th scope="col">Item ID</th>
+                    <th colspan="2">Item Name</th>
+                    <th scope="col">Item Price</th>
+                    <th scope="col">Item Category</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">F01</th>
+                    <td colspan="2">Adobo</td>
+                    <td>150</td>
+                    <td>Viand</td>
+                    <td><button type="button" class="btn btn-info">Edit</button>
+                    <button type="button" class="btn btn-danger">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">F02</th>
+                    <td colspan="2">Sisig</td>
+                    <td>100</td>
+                    <td>Viand</td>
+                    <td><button type="button" class="btn btn-info">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">F03</th>
+                    <td colspan="2">Afritada</td>
+                    <td>168</td>
+                    <td>Viand</td>
+                    <td><button type="button" class="btn btn-info">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">F04</th>
+                    <td colspan="2">Tinola</td>
+                    <td>150</td>
+                    <td>Viand</td>
+                    <td><button type="button" class="btn btn-info">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D01</th>
+                    <td colspan="2">Buko Juice</td>
+                    <td>25</td>
+                    <td>Drinks</td>
+                    <td><button type="button" class="btn btn-info">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">D02</th>
+                    <td colspan="2">Sago't Gulaman</td>
+                    <td>30</td>
+                    <td>Drinks</td>
+                    <td><button type="button" class="btn btn-info">Edit</button>
+                        <button type="button" class="btn btn-danger">Delete</button></td>
+                  </tr>
+                </tbody>
+              </table>
+          </div>
+        <div class="modal-footer">
+         <h6>Click Add Button if you want to add more item</h6>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <p class="fs-4 fw-bold ms-5 " >Menu List</p>
+    <div class="row row-cols-1 row-cols-md-4 g-row-4 g-col-4 ps-5 pe-5">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Adobo</h5>
+            <img src="images\adobo.jpg" class="img-fluid" alt="...">
+            <p class="card-text fs-6 text-muted">Good for 3-4 person</p>
+          <p class="price fw-bold">Price: 150 php</p>
+            <ul class="list text-primary">
+              <li>Viand</li>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sisig</h5>
+            <img src="images\sisig.jpg"class="img-fluid" alt="...">
+          <p class="card-text text-muted">Good for 3-4 person</p>
+          <p class="price fw-bold">Price: 100 php</p>
+          <ul class="list text-primary">
+            <li>Viand</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Afritada</h5>
+            <img src="images\Afritada.jpg"class="img-fluid" alt="...">
+            <p class="card-text text-muted">Good for 3-4 person</p>
+            <p class="price fw-bold">Price: 168 php</p>
+            <ul class="list text-primary">
+              <li>Viand</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Tinola</h5>
+            <img src="images\tinola.jpg" class="img-fluid" alt="...">
+            <p class="card-text text-muted">Good for 3-4 person</p>
+            <p class="price fw-bold">Price: 150 php</p>
+            <ul class="list text-primary">
+              <li>Viand</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4 g-4 ps-5 pe-5">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Buko Juice</h5>
+            <img src="images\bukojuice.jpg" class="img-fluid" alt="...">
+            <p class="price fw-bold">Price: 25 php</p>
+            <ul class="list text-primary">
+              <li>Drinks</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col position-absolute top-50 start-50">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sago't Gulaman</h5>
+            <img src="images\sago.jpg" class="img-fluid" alt="...">
+                  <p class="price fw-bold">Price: 30 php</p>
+                   <ul class="list text-primary">
+                     <li>Drinks</li>
+                   </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <div class="update mx-auto mt-5" style="width: 500px;">
+        <span class="edit fs-1 fw-bold">Create</span>
+                
+        <h3 class="restaurant fs-2">Restaurant</h3>
+        <div class="mb-3">
+            <label for="name" class="Name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Food Name">
+        </div>
+        <label for="FoodList" class="formlabel">Type of Food</label><br>
+            <input class="formcontrol" list="FoodOptions" id="FoodList" placeholder="Italian">
+            <datalist id="FoodOptions">
+            <option value="Mexican">
+            <option value="French">
+            <option value="African">
+            <option value="American">
+            <option value="Indian">
+            </datalist><br>
+            <div class="form-check"><br>
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">Open for online orders?</label>
+            </div><br>
+            <div class="date mb-3">
+                    <label for="date">LuanDate</label>
+                    <input type="datetime-local" class="form-control" id="Date">
+            </div><br>
+            <div>
+                <label for="DataList" class="formlabel">City</label><br>
+                <input class="formcontrol" list="Options" id="DataList" placeholder="Choose a City">
+                <datalist id="Options">
+                <option value="Binan">
+                <option value="San Pedro">
+                <option value="Seattle">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                </datalist><br>
+            </div><br>
+            <button type="button" class="btn btn-primary">Create</button>
+            <a href="index.html">Back to List</a>
+                
+    </div>
+</body>
+</html>
